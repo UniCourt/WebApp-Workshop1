@@ -9,18 +9,18 @@
 
 <meta content="object" property="og:type">
 <meta content="GitLab" property="og:site_name">
-<meta content="server.js · master · Bharath Kumar / Node Workshop" property="og:title">
+<meta content="weather.js · master · Bharath Kumar / Node Workshop" property="og:title">
 <meta content="Node Workshop" property="og:description">
 <meta content="https://gitlab.unicourt.com/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png" property="og:image">
 <meta content="64" property="og:image:width">
 <meta content="64" property="og:image:height">
-<meta content="https://gitlab.unicourt.com/bharathk/node-workshop/-/blob/master/server.js" property="og:url">
+<meta content="https://gitlab.unicourt.com/bharathk/node-workshop/-/blob/master/weather.js" property="og:url">
 <meta content="summary" property="twitter:card">
-<meta content="server.js · master · Bharath Kumar / Node Workshop" property="twitter:title">
+<meta content="weather.js · master · Bharath Kumar / Node Workshop" property="twitter:title">
 <meta content="Node Workshop" property="twitter:description">
 <meta content="https://gitlab.unicourt.com/assets/gitlab_logo-7ae504fe4f68fdebb3c2034e36621930cd36ea87924c11ff65dbcb8ed50dca58.png" property="twitter:image">
 
-<title>server.js · master · Bharath Kumar / Node Workshop · GitLab</title>
+<title>weather.js · master · Bharath Kumar / Node Workshop · GitLab</title>
 <meta content="Node Workshop" name="description">
 <link rel="shortcut icon" type="image/png" href="/assets/favicon-7901bd695fb93edb07975966062049829afb56cf11511236e61bcf425070e36e.png" id="favicon" data-original-href="/assets/favicon-7901bd695fb93edb07975966062049829afb56cf11511236e61bcf425070e36e.png" />
 
@@ -58,7 +58,7 @@ window.uploads_path = "/bharathk/node-workshop/uploads";
 //]]>
 </script>
 <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="BLIDSIoHrDHcN/+TeUW2RRijg1Ff10J2Xw7zujoEptO0KeXk8mON2xW/hTDBr0yGZuzy9aYyWrHU8pbEHvGAqw==" />
+<meta name="csrf-token" content="AHsI3igzOxbiUxqMps684Ad5hWu/vbJ4ZhosB09uteaw4O5yUFca/CvbYC8eJEYjeTb0z0ZYqr/t5kl5a5uTng==" />
 <meta name="csp-nonce" />
 <meta name="action-cable-url" content="/-/cable" />
 <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
@@ -76,7 +76,7 @@ window.uploads_path = "/bharathk/node-workshop/uploads";
 
 </head>
 
-<body class="ui-indigo tab-width-8  gl-browser-chrome gl-platform-linux" data-find-file="/bharathk/node-workshop/-/find_file/master" data-namespace-id="137" data-page="projects:blob:show" data-page-type-id="master/server.js" data-project="node-workshop" data-project-id="2177">
+<body class="ui-indigo tab-width-8  gl-browser-chrome gl-platform-linux" data-find-file="/bharathk/node-workshop/-/find_file/master" data-namespace-id="137" data-page="projects:blob:show" data-page-type-id="master/weather.js" data-project="node-workshop" data-project-id="2177">
 
 <script>
 //<![CDATA[
@@ -598,13 +598,13 @@ Activity
 
 <li>
 <h2 class="breadcrumbs-sub-title">
-<a href="/bharathk/node-workshop/-/blob/master/server.js">Repository</a>
+<a href="/bharathk/node-workshop/-/blob/master/weather.js">Repository</a>
 </h2>
 </li>
 </ul>
 </div>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Bharath Kumar","item":"https://gitlab.unicourt.com/bharathk"},{"@type":"ListItem","position":2,"name":"Node Workshop","item":"https://gitlab.unicourt.com/bharathk/node-workshop"},{"@type":"ListItem","position":3,"name":"Repository","item":"https://gitlab.unicourt.com/bharathk/node-workshop/-/blob/master/server.js"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Bharath Kumar","item":"https://gitlab.unicourt.com/bharathk"},{"@type":"ListItem","position":2,"name":"Node Workshop","item":"https://gitlab.unicourt.com/bharathk/node-workshop"},{"@type":"ListItem","position":3,"name":"Repository","item":"https://gitlab.unicourt.com/bharathk/node-workshop/-/blob/master/weather.js"}]}
 
 </script>
 
@@ -624,7 +624,7 @@ Activity
 <div class="tree-ref-container">
 <div class="tree-ref-holder">
 <form class="project-refs-form" action="/bharathk/node-workshop/-/refs/switch" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="destination" id="destination" value="blob" />
-<input type="hidden" name="path" id="path" value="server.js" />
+<input type="hidden" name="path" id="path" value="weather.js" />
 <div class="dropdown">
 <button class="dropdown-menu-toggle js-project-refs-dropdown qa-branches-select" type="button" data-toggle="dropdown" data-selected="master" data-ref="master" data-refs-url="/bharathk/node-workshop/refs?sort=updated_desc" data-field-name="ref" data-submit-form-on-click="true" data-visit="true"><span class="dropdown-toggle-text ">master</span><svg class="s16 dropdown-menu-toggle-icon gl-top-3" data-testid="chevron-down-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#chevron-down"></use></svg></button>
 <div class="dropdown-menu dropdown-menu-paging dropdown-menu-selectable git-revision-dropdown qa-branches-dropdown">
@@ -643,12 +643,12 @@ Activity
 <a href="/bharathk/node-workshop/-/tree/master">node-workshop
 </a></li>
 <li class="breadcrumb-item">
-<a href="/bharathk/node-workshop/-/blob/master/server.js"><strong>server.js</strong>
+<a href="/bharathk/node-workshop/-/blob/master/weather.js"><strong>weather.js</strong>
 </a></li>
 </ul>
 </div>
 <div class="tree-controls gl-children-ml-sm-3"><a class="gl-button btn shortcuts-find-file" rel="nofollow" href="/bharathk/node-workshop/-/find_file/master">Find file
-</a><a class="gl-button btn js-blob-blame-link" href="/bharathk/node-workshop/-/blame/master/server.js">Blame</a><a class="gl-button btn" href="/bharathk/node-workshop/-/commits/master/server.js">History</a><a class="gl-button btn js-data-file-blob-permalink-url" href="/bharathk/node-workshop/-/blob/48de64a779d96e836db5d3c252ab7e21a24dc5cc/server.js">Permalink</a></div>
+</a><a class="gl-button btn js-blob-blame-link" href="/bharathk/node-workshop/-/blame/master/weather.js">Blame</a><a class="gl-button btn" href="/bharathk/node-workshop/-/commits/master/weather.js">History</a><a class="gl-button btn js-data-file-blob-permalink-url" href="/bharathk/node-workshop/-/blob/48de64a779d96e836db5d3c252ab7e21a24dc5cc/weather.js">Permalink</a></div>
 </div>
 
 <div class="info-well d-none d-sm-block">
@@ -695,22 +695,22 @@ Activity
 <div class="file-header-content">
 <svg class="s16" data-testid="doc-text-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#doc-text"></use></svg>
 <strong class="file-title-name gl-word-break-all" data-qa-selector="file_name_content">
-server.js
+weather.js
 </strong>
-<button class="btn btn-clipboard btn-transparent" data-toggle="tooltip" data-placement="bottom" data-container="body" data-class="btn-clipboard btn-transparent" data-title="Copy file path" data-clipboard-text="{&quot;text&quot;:&quot;server.js&quot;,&quot;gfm&quot;:&quot;`server.js`&quot;}" type="button" title="Copy file path" aria-label="Copy file path"><svg class="s16" data-testid="copy-to-clipboard-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#copy-to-clipboard"></use></svg></button>
+<button class="btn btn-clipboard btn-transparent" data-toggle="tooltip" data-placement="bottom" data-container="body" data-class="btn-clipboard btn-transparent" data-title="Copy file path" data-clipboard-text="{&quot;text&quot;:&quot;weather.js&quot;,&quot;gfm&quot;:&quot;`weather.js`&quot;}" type="button" title="Copy file path" aria-label="Copy file path"><svg class="s16" data-testid="copy-to-clipboard-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#copy-to-clipboard"></use></svg></button>
 <small class="mr-1">
-711 Bytes
+927 Bytes
 </small>
 </div>
 
-<div class="file-actions gl-display-flex gl-flex-fill-1 gl-align-self-start gl-md-justify-content-end"><a class="btn btn-primary js-edit-blob gl-mr-3  btn-sm" data-track-event="click_edit" data-track-label="Edit" href="/bharathk/node-workshop/-/edit/master/server.js">Edit</a><a class="btn btn-primary ide-edit-button gl-mr-3 btn-inverted btn-sm" data-track-event="click_edit_ide" data-track-label="Web IDE" data-track-property="secondary" href="/-/ide/project/santhoshk/node-workshop/edit/master/-/server.js">Web IDE</a><div class="btn-group ml-2" role="group">
+<div class="file-actions gl-display-flex gl-flex-fill-1 gl-align-self-start gl-md-justify-content-end"><a class="btn btn-primary js-edit-blob gl-mr-3  btn-sm" data-track-event="click_edit" data-track-label="Edit" href="/bharathk/node-workshop/-/edit/master/weather.js">Edit</a><a class="btn btn-primary ide-edit-button gl-mr-3 btn-inverted btn-sm" data-track-event="click_edit_ide" data-track-label="Web IDE" data-track-property="secondary" href="/-/ide/project/santhoshk/node-workshop/edit/master/-/weather.js">Web IDE</a><div class="btn-group ml-2" role="group">
 
 <button name="button" type="submit" class="btn btn-default" data-target="#modal-upload-blob" data-toggle="modal">Replace</button>
 <button name="button" type="submit" class="btn btn-default" data-target="#modal-remove-blob" data-toggle="modal">Delete</button>
 </div><div class="btn-group ml-2" role="group">
-<button class="btn btn btn-sm js-copy-blob-source-btn" data-toggle="tooltip" data-placement="bottom" data-container="body" data-class="btn btn-sm js-copy-blob-source-btn" data-title="Copy file contents" data-clipboard-target=".blob-content[data-blob-id=&#39;49de0bf55adb53cb24b4b054f81ff812ee98425f&#39;] &gt; pre" type="button" title="Copy file contents" aria-label="Copy file contents"><svg class="s16" data-testid="copy-to-clipboard-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#copy-to-clipboard"></use></svg></button>
-<a class="btn btn-sm has-tooltip" target="_blank" rel="noopener noreferrer" aria-label="Open raw" title="Open raw" data-container="body" href="/bharathk/node-workshop/-/raw/master/server.js"><svg class="s16" data-testid="doc-code-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#doc-code"></use></svg></a>
-<a download="server.js" class="btn btn-sm has-tooltip" target="_blank" rel="noopener noreferrer" aria-label="Download" title="Download" data-container="body" href="/bharathk/node-workshop/-/raw/master/server.js?inline=false"><svg class="s16" data-testid="download-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#download"></use></svg></a>
+<button class="btn btn btn-sm js-copy-blob-source-btn" data-toggle="tooltip" data-placement="bottom" data-container="body" data-class="btn btn-sm js-copy-blob-source-btn" data-title="Copy file contents" data-clipboard-target=".blob-content[data-blob-id=&#39;c03893108906950f845f12f5e896f138b439f5a7&#39;] &gt; pre" type="button" title="Copy file contents" aria-label="Copy file contents"><svg class="s16" data-testid="copy-to-clipboard-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#copy-to-clipboard"></use></svg></button>
+<a class="btn btn-sm has-tooltip" target="_blank" rel="noopener noreferrer" aria-label="Open raw" title="Open raw" data-container="body" href="/bharathk/node-workshop/-/raw/master/weather.js"><svg class="s16" data-testid="doc-code-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#doc-code"></use></svg></a>
+<a download="weather.js" class="btn btn-sm has-tooltip" target="_blank" rel="noopener noreferrer" aria-label="Download" title="Download" data-container="body" href="/bharathk/node-workshop/-/raw/master/weather.js?inline=false"><svg class="s16" data-testid="download-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#download"></use></svg></a>
 
 </div></div>
 </div>
@@ -723,7 +723,7 @@ edit
 files in this project directly. Please fork this project,
 make your changes there, and submit a merge request.
 </span>
-<a class="js-fork-suggestion-button gl-button btn btn-grouped btn-inverted btn-success" rel="nofollow" data-method="post" href="/bharathk/node-workshop/-/blob/master/server.js">Fork</a>
+<a class="js-fork-suggestion-button gl-button btn btn-grouped btn-inverted btn-success" rel="nofollow" data-method="post" href="/bharathk/node-workshop/-/blob/master/weather.js">Fork</a>
 <button class="js-cancel-fork-suggestion-button gl-button btn btn-grouped" type="button">
 Cancel
 </button>
@@ -731,7 +731,7 @@ Cancel
 
 
 
-<div class="blob-viewer" data-path="server.js" data-type="simple" data-url="/bharathk/node-workshop/-/blob/master/server.js?format=json&amp;viewer=simple">
+<div class="blob-viewer" data-path="weather.js" data-type="simple" data-url="/bharathk/node-workshop/-/blob/master/weather.js?format=json&amp;viewer=simple">
 <div class="text-center gl-mt-4 gl-mb-3">
 <span class="gl-spinner gl-spinner-orange gl-spinner-md qa-spinner" aria-label="Loading"></span>
 </div>
@@ -746,24 +746,24 @@ Cancel
 <div class="modal-dialog">
 <div class="modal-content">
 <div class="modal-header">
-<h3 class="page-title">Delete server.js</h3>
+<h3 class="page-title">Delete weather.js</h3>
 <button aria-label="Close" class="close" data-dismiss="modal" type="button">
 <span aria-hidden>&times;</span>
 </button>
 </div>
 <div class="modal-body">
-<form class="js-delete-blob-form js-quick-submit js-requires-input" action="/bharathk/node-workshop/-/blob/master/server.js" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="delete" /><input type="hidden" name="authenticity_token" value="AA4J5jeoAPXSuCUPGomkDdTQoiYG7j6kEbHkJHQByoGwle9KT8whHxswX6yiY17Oqp/Tgv8LJmOaTYFaUPTs+Q==" /><div class="form-group row commit_message-group">
-<label class="col-form-label col-sm-2" for="commit_message-ff4f76060b060772069bb267ec2aa009">Commit message
+<form class="js-delete-blob-form js-quick-submit js-requires-input" action="/bharathk/node-workshop/-/blob/master/weather.js" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="delete" /><input type="hidden" name="authenticity_token" value="8MRB9NEyD/vs9FoaOL9IX+1Gf1OJyTFAMEkPo//UAEZAX6dYqVYuESV8ILmAVbKckwkO93AsKYe7tWrd2yEmPg==" /><div class="form-group row commit_message-group">
+<label class="col-form-label col-sm-2" for="commit_message-3219bbdfbf773db81dd8b5386ea4014d">Commit message
 </label><div class="col-sm-10">
 <div class="commit-message-container">
 <div class="max-width-marker"></div>
-<textarea name="commit_message" id="commit_message-ff4f76060b060772069bb267ec2aa009" class="form-control js-commit-message" placeholder="Delete server.js" required="required" rows="3">
-Delete server.js</textarea>
+<textarea name="commit_message" id="commit_message-3219bbdfbf773db81dd8b5386ea4014d" class="form-control js-commit-message" placeholder="Delete weather.js" required="required" rows="3">
+Delete weather.js</textarea>
 </div>
 </div>
 </div>
 
-<input type="hidden" name="branch_name" id="branch_name" value="santhoshk-master-patch-42329" />
+<input type="hidden" name="branch_name" id="branch_name" value="santhoshk-master-patch-52534" />
 <input type="hidden" name="create_merge_request" id="create_merge_request" value="1" />
 <input type="hidden" name="original_branch" id="original_branch" value="master" class="js-original-branch" />
 
@@ -782,13 +782,13 @@ Delete server.js</textarea>
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
 <div class="modal-header">
-<h3 class="page-title">Replace server.js</h3>
+<h3 class="page-title">Replace weather.js</h3>
 <button aria-label="Close" class="close" data-dismiss="modal" type="button">
 <span aria-hidden>&times;</span>
 </button>
 </div>
 <div class="modal-body">
-<form class="js-quick-submit js-upload-blob-form" data-method="put" action="/bharathk/node-workshop/-/update/master/server.js" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="QYLStjs5BKC+syxopnB9PE27fRGJ5OoO9umii7jKM/jxGTQaQ10lSnc7Vssemof/M/QMtXAB8sl9Fcf1nD8VgA==" /><div class="dropzone">
+<form class="js-quick-submit js-upload-blob-form" data-method="put" action="/bharathk/node-workshop/-/update/master/weather.js" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="3ij+xFxK1nUSEsTeYhaMQ6eSfB4GuJLCZV8xXIjfzidusxhoJC73n9uavn3a/HaA2d0Nuv9digXuo1QirCroXw==" /><div class="dropzone">
 <div class="dropzone-previews blob-upload-dropzone-previews">
 <p class="dz-message light">
 Attach a file by drag &amp; drop or <a class="markdown-selector" href="#">click to upload</a>
@@ -798,17 +798,17 @@ Attach a file by drag &amp; drop or <a class="markdown-selector" href="#">click 
 <br>
 <div class="dropzone-alerts gl-alert gl-alert-danger gl-mb-5 data" style="display:none"></div>
 <div class="form-group row commit_message-group">
-<label class="col-form-label col-sm-2" for="commit_message-c168d6448b4aa81096892024866676cb">Commit message
+<label class="col-form-label col-sm-2" for="commit_message-09349fd84651bcac7a94e0e0f88d0ec5">Commit message
 </label><div class="col-sm-10">
 <div class="commit-message-container">
 <div class="max-width-marker"></div>
-<textarea name="commit_message" id="commit_message-c168d6448b4aa81096892024866676cb" class="form-control js-commit-message" placeholder="Replace server.js" required="required" rows="3">
-Replace server.js</textarea>
+<textarea name="commit_message" id="commit_message-09349fd84651bcac7a94e0e0f88d0ec5" class="form-control js-commit-message" placeholder="Replace weather.js" required="required" rows="3">
+Replace weather.js</textarea>
 </div>
 </div>
 </div>
 
-<input type="hidden" name="branch_name" id="branch_name" value="santhoshk-master-patch-42331" />
+<input type="hidden" name="branch_name" id="branch_name" value="santhoshk-master-patch-52542" />
 <input type="hidden" name="create_merge_request" id="create_merge_request" value="1" />
 <input type="hidden" name="original_branch" id="original_branch" value="master" class="js-original-branch" />
 
