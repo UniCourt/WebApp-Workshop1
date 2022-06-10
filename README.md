@@ -14,7 +14,9 @@
  
 ## Workshop environment setup 
  - Create a folder `workshop`
+   - `mkdir workshop`
  - Navigate to the folder `workshop` and clone the from your personal repo using HTTPS
+ - `cd workshop`
  - git clone `<https://github.com/{username}-uc/WebApp-Workshop1.git>`
  - Navigate to the folder `workshop/WebApp-Workshop1/`
 

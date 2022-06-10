@@ -1,7 +1,7 @@
 # Javascript Playground
 
 ## Setup docker to play with basic Javascript
-- Navigate to the folder `workshop/WebApp-workshop1/playground`
+- Navigate to the folder `workshop/WebApp-Workshop1/playground`
 - Build and run Docker-compose
 - `docker pull nginx:alpine`
 - `docker-compose build`
