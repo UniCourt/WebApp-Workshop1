@@ -16,8 +16,8 @@ router.get("/movie-info/:id", async (req, res) => {
     const queryStatement = `INSERT INTO movie 
     (original_title, original_language, popularity, release_date, revenue, status, tagline, title, vote_average)
     VALUES (
-      '${data.original_title}',
-      '${data.original_language}',
+      '${data.original_title.replace("\'", "")}',
+      '${data.original_language.replace("\'", "")}',
        ${data.popularity},
       '${data.release_date}',
        ${data.revenue},
@@ -25,7 +25,7 @@ router.get("/movie-info/:id", async (req, res) => {
       '${data.tagline.replace("\'", "")}',
       '${data.title}',
       ${data.vote_average}
-    );`
+    ) ON CONFLICT ON CONSTRAINT movie_original_title_key DO NOTHING ;`
 
     await query(queryStatement);
     console.log(`API fetch is successfull`)
