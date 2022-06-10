@@ -7,7 +7,7 @@ router.get("/movie-info/:id", async (req, res) => {
   const id = req.params.id;
 
   try {
-    const apiKey = '884c99fba5d0040a8c1f350d7d3dc312';
+    const apiKey = '<api-key-here>';
     let tmdbApiUrl = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`;
     console.log(`Movie URL : ${tmdbApiUrl}`)
     const movieInfoResponse = await axios.get(tmdbApiUrl);

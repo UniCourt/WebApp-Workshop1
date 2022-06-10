@@ -27,25 +27,18 @@
 
 
 ## Get API key for themoviedb
- - Create a account in https://www.themoviedb.org/
- - Co to https://www.themoviedb.org/settings/api 
- - Co to Request an API Key and select Developer
+ - Create an account in https://www.themoviedb.org/signup
+ - Go to https://www.themoviedb.org/settings/api 
+ - Go to Request an API Key and select Developer
  - Accept the terms and condition and fill up the form
  - Copy API Key (v3 auth) & paste in in `controller/tmdb_api.js` file
+   - Replace `<api-key-here>` with your API key
  - Go to the URL http://localhost:3000/movie-info/{`movie-id`}
+   - Enter a movie-id between 100 and 500
+   - E.g. Go To `http://localhost:3000/movie-info/500`
  - Verify if API data is inserted into the database
    - `SELECT * FROM movie;`
 
-## Accesing TMDB API 
- - Fetch 50 movies using TMDB API starting movie Id from 100. 
- - Keep a 1 second delay after every request
- - Read and save the necessary information from the response to the database (refer database schema)
- - Other API which needs to be called and saved to the database
-      * credits
-      * recommendations
-      * reviews
- - We shall create a express application to expose these API.
- - An example on how to access TMDB API is present in tmdb_api.js. Replace " api_key " in the URL with your API key
 
 
 
