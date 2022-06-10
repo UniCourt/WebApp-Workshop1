@@ -19,7 +19,8 @@ CREATE TABLE IF NOT EXISTS movie (
 CREATE TABLE IF NOT EXISTS production_company (
   id serial,
   name varchar(500) NOT NULL UNIQUE,
-  origin_country varchar(50)
+  origin_country varchar(50),
+  PRIMARY KEY (id)
 );
 
 
