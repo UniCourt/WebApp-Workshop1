@@ -7,12 +7,12 @@
  - Buiild the image
    - `docker-compose build`
  - Initialize the postgres
-   - `docker-compose up postgres`
+   - `docker-compose up -d postgres`
    - Note: As PostgreSQL init some process to initialize the database
    - After the init process complete bring down the postgres
    - `docker-compose down`
  - Now bring the node & postgres app together
- - `docker-compose up`
+ - `docker-compose up -d`
  - open up http://localhost:3000/ in your browser
  - you should see **Welcome to Nodejs WorkShop** in the screen
 

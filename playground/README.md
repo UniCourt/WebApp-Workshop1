@@ -5,5 +5,5 @@
 - Build and run Docker-compose
 - `docker pull nginx:alpine`
 - `docker-compose build`
-- `docker-compose up`
+- `docker-compose up -d`
 - Open http://localhost:8000 in your browser
