@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .status {
+            font-size: 20px;
+            color: blue;
+        }
+        
+    </style>
+
+    <script>
+        function changeImage() {
+            const statusElement = document.getElementById('bulb-status');
+
+            var image = document.getElementById('myImage');
+            
+            if (image.src.match("bulbon")) {
+                image.src = "assets/pic_bulboff.gif";
+                
+                setTimeout(() => {
+                    console.log('Turning on now')
+                    statusElement.innerHTML = "Off" 
+                }, 5000);
+                
+            } else {
+                image.src = "assets/pic_bulbon.gif";
+                setTimeout(() => {
+                    console.log('Turning off now')
+                    statusElement.innerHTML = "On"
+                    
+                }, 5000);
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <h2>Script Bulb</h2>
+    <p>
+        Tunr On / Off the bulb after 5 seconds
+    </p>
+    <hr>
+    <p>Bulb Status: <span id="bulb-status" class="status">Off</span></p>
+    <img id="myImage"src="assets/pic_bulboff.gif" width="100" height="180">
+    <br>
+    <button onclick="changeImage()">On / Off</button>
+    
+</body>
+
+</html>

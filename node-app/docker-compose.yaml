@@ -1,7 +1,10 @@
 version: "3.7"
 services:
+
   app:
     build: .
+    container_name: node-express-app
+    image: node-app:1.0.0
     depends_on:
       - postgres
     volumes:
@@ -9,12 +12,18 @@ services:
       - /usr/src/app/node_modules
     ports:
       - 3000:3000
-      - "9229:9229"
+      
   postgres:
-    image: postgres
+    image: postgres:13-alpine
+    container_name: postgres-db
     environment:
       - POSTGRES_USER=admin_user
       - POSTGRES_PASSWORD=admin_pass
       - POSTGRES_DB=movie_db
+    ports:
+      - 5432:5432
     volumes:
-      - ../pg_data:/var/lib/postgresql/data
+      - pg_data:/var/lib/postgresql/data/
+
+volumes:
+  pg_data:
