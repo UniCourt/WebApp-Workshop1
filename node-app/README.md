@@ -1,10 +1,11 @@
-# Building Express APP with TMDB API
+# Building Express APP with TMDB API 
   
 ## Bring up the application with Docker-compose
- - **Navigate to the folder `workshop/WebApp-Workshop1/node-app`**
- - `docker pull node:alpine3.15`
- - `docker pull postgres:13-alpine`
- - Buiild the image
+ - **Open terminal & navigate to the folder `workshop/WebApp-Workshop1/node-app`**
+ - Pull necessary images 
+   - `docker pull node:alpine3.15`
+   - `docker pull postgres:13-alpine`
+ - Build the image
    - `docker-compose build`
  - Initialize the postgres
    - `docker-compose up -d postgres`
@@ -12,17 +13,18 @@
    - After the init process complete bring down the postgres
    - `docker-compose down`
  - Now bring the node & postgres app together
- - `docker-compose up -d`
- - open up http://localhost:3000/ in your browser
- - you should see **Welcome to Nodejs WorkShop** in the screen
+   - `docker-compose up -d`
+ - Open up http://localhost:3000/ in your browser
+ - You should see **Welcome to Nodejs WorkShop** in the screen
 
-## Load database schema
+## Load database schema for Movie API
  - Import database schema and create tables
- - `docker exec -i postgres-db psql -U admin_user -d movie_db  < schema/movie.sql`
- - Now login to the databse using password
- - `docker exec -it postgres-db psql -U admin_user -d movie_db  -W`
+   - `docker exec -i postgres-db psql -U admin_user -d movie_db  < schema/movie.sql`
+     - You should see a message CREATE TABLE
+ - Open new terminal & login to the databse using password
+   - `docker exec -it postgres-db psql -U admin_user -d movie_db  -W`
  - Check if all the tables are loaded
- - `movie_db=# \d`
+   - `movie_db=# \d`
  - Note: You should see all the relations
 
 
@@ -40,6 +42,48 @@
    - `SELECT * FROM movie;`
 
 
+# Building Express APP with Public Holiday API
+
+## Explore Public Holiday API
+- Go to the link https://date.nager.at/Api
+- Check out the example API which returns the public holidays from a given year and country.
+  - 2017/AT
+- Click on API documentation 
+  - Expand **/api/v3/AvailableCountries**
+  - Click on try it out and execute
+  - A list of available countries is returned from this public API
+  - Expand  **/api/v3/PublicHolidays/{year}/{countryCode}**
+  - Click on try it out and fill the form
+    - year: 2017
+    - countryCode: AT
+  - Click on Execute
+    - The lsit of holidays is returned
+
+- Now let us call this public API from our Express APP and insert data into  the database
 
 
-   
+## Load database schema for Public Holiday API
+- Open a terminal
+- Import database schema and create tables
+   - `docker exec -i postgres-db psql -U admin_user -d movie_db  < schema/holiday.sql`
+     - You should see a message CREATE TABLE
+ - Verify the schema from terminal previosly logged in to the database
+   - `movie_db=# \d`
+ - `country` & `holiday` new tables are added
+
+## Fetch info from Public Holiday API 
+- First let us get the available list of contry names
+- Open a new tab and go to http://localhost:3000/list-countries
+  - Available country code is listed here. Make a note we use only these country code to fetch the holiday information
+- Let us get the information country US and the year 2018
+- Go to http://localhost:3000/holiday-info/2018/US
+  - You should see the response as status `success` and data
+- Verfify if data is inserted into your database
+  - `SELECT * FROM country;`
+  - `SELECT * FROM holiday;`
+- Let us try to fetch the same country and year once again 
+  - go to  http://localhost:3000/holiday-info/2018/US
+  - You should see the response as status `fail`
+  - **Note**: Country and Year should be Unique
+- Let us try one more API go to http://localhost:3000/holiday-info/2017/US
+- Add few more data by changing the year and the country code from available list

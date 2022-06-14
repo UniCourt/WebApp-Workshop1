@@ -16,6 +16,7 @@ let port = 3000
 
 app.use(require("./weather"));
 app.use(require("./controller/tmdb_api"));
+app.use(require("./controller/holiday_api"));
 
 //Define request response in root URL (/)
 app.get('/', function (req, res) {  
