@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS country (
     country_code varchar(2),
     holiday_year INT,
     holiday_count INT,
-    CONSTRAINT country_primary_key PRIMARY KEY(id) ON DELETE CASCADE,
+    CONSTRAINT country_primary_key PRIMARY KEY(id),
     CONSTRAINT uq_year_code_together UNIQUE (country_code, holiday_year)
 );
 
