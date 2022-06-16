@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .status {
+            color: rgb(20, 20, 206);
+        }
+    </style>
+
+    <script>
+
+        async function turnOntheBulb(image) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    image.src = "assets/pic_bulbon.gif";
+                    resolve()
+                }, 3000);
+            });
+        }
+
+        async function turnOfftheBulb(image) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    image.src = "assets/pic_bulboff.gif";
+                    resolve()
+                }, 3000);
+            });
+        }
+
+        async function changeImage() {
+                    const statusElement = document.getElementById('bulb-status');
+
+                    const image = document.getElementById('myImage');
+
+                    if (image.src.match("bulbon")) {
+
+                        await turnOfftheBulb(image)
+                        console.log('O F F')
+                        statusElement.innerHTML = "Off";
+
+                    } else {
+
+                        await turnOntheBulb(image)
+                        console.log('O N')
+                        statusElement.innerHTML = "On";
+
+                    }
+                }
+    </script>
+
+</head>
+
+<body>
+    <h2>Async - Await </h2>
+    <p>
+        Tunr On / Off the bulb after 5 seconds
+    </p>
+    <hr>
+    <h1>Bulb Status: <span id="bulb-status" class="status">Off</span></h1>
+    <img id="myImage" src="assets/pic_bulboff.gif" width="100" height="180">
+    <br>
+    <button onclick="changeImage()">On / Off</button>
+
+</body>
+
+</html>

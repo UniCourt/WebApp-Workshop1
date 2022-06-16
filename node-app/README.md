@@ -2,9 +2,6 @@
   
 ## Bring up the application with Docker-compose
  - **Open terminal & navigate to the folder `workshop/WebApp-Workshop1/node-app`**
- - Pull necessary images 
-   - `docker pull node:alpine3.15`
-   - `docker pull postgres:13-alpine`
  - Build the image
    - `docker-compose build`
  - Initialize the postgres
