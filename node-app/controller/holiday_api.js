@@ -2,11 +2,16 @@ const express = require("express");
 const axios = require('axios');
 const router = express.Router();
 const { query } = require("../postgres");
+const bodyParser = require('body-parser');  
+const urlencodedParser = bodyParser.urlencoded({ extended: false })  
 
-router.get("/holiday-info/:year/:countrycode", async (req, res) => {
-  const year = req.params.year;
-  const countryCode = req.params.countrycode;
-  console.log(countryCode.length)
+router.post("/country-holiday",urlencodedParser, async (req, res) => {
+  
+  const year = req.body.year;
+  const countryCode = req.body.countryCode;
+
+  if (!year || !countryCode) return res.status(500).json({ message: "Please enter Year and Country Code values" });
+
   let result = {}
   try {
 

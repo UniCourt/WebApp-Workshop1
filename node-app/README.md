@@ -67,18 +67,26 @@
  - `country` & `holiday` new tables are added
 
 ## Fetch info from Public Holiday API 
-- First let us get the available list of contry names
+- First let us get the available list of countries
 - Open a new tab and go to http://localhost:3000/list-countries
   - Available country code is listed here. Make a note we use only these country code to fetch the holiday information
-- Let us get the information country US and the year 2018
-- Go to http://localhost:3000/holiday-info/2018/US
+- Let us get the information country US and the year 2018 using [curl](https://curl.se/docs/)
+- Open a terminal and run the following command
+  ```
+  curl -X POST -d "year=2018&counryCode=US" http://localhost:3000/country-holiday
+  ```
   - You should see the response as status `success` and data
 - Verfify if data is inserted into your database
   - `SELECT * FROM country;`
   - `SELECT * FROM holiday;`
 - Let us try to fetch the same country and year once again 
-  - go to  http://localhost:3000/holiday-info/2018/US
+  ```
+  curl -X POST -d "year=2018&counryCode=US" http://localhost:3000/country-holiday
+  ```
   - You should see the response as status `fail`
-  - **Note**: Country and Year should be Unique
-- Let us try one more API go to http://localhost:3000/holiday-info/2017/US
-- Add few more data by changing the year and the country code from available list
+  - **Note**: Country and Year should be unique
+- Let us try one more API. Fetch the holiday list for country AT and year 2017 
+  ```
+  curl -X POST -d "year=2017&counryCode=AT" http://localhost:3000/country-holiday
+  ```
+- Add few more data using `curl` by changing the year and the country code from available countries
