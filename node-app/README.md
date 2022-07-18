@@ -1,42 +1,3 @@
-# Building Express APP with TMDB API 
-  
-## Bring up the application with Docker-compose
- - **Open terminal & navigate to the folder `workshop/WebApp-Workshop1/node-app`**
- - Build the image
-   - `docker-compose build`
- - Initialize the postgres
-   - `docker-compose up -d postgres`
-   - Note: As PostgreSQL init some process to initialize the database
- - Now bring the node & postgres app together
-   - `docker-compose up -d`
- - Open up http://localhost:3000/ in your browser
- - You should see **Welcome to Nodejs WorkShop** in the screen
-
-## Load database schema for Movie API
- - Import database schema and create tables
-   - `docker exec -i postgres-db psql -U admin_user -d movie_db  < schema/movie.sql`
-     - You should see a message CREATE TABLE
- - Open new terminal & login to the databse using password
-   - `docker exec -it postgres-db psql -U admin_user -d movie_db  -W`
- - Check if all the tables are loaded
-   - `movie_db=# \d`
- - Note: You should see all the relations
-
-
-## Get API key for themoviedb
- - Create an account in https://www.themoviedb.org/signup
- - Go to https://www.themoviedb.org/settings/api 
- - Go to Request an API Key and select Developer
- - Accept the terms and condition and fill up the form
- - Copy API Key (v3 auth) & paste in in `controller/tmdb_api.js` file
-   - Replace `<api-key-here>` with your API key
- - Go to the URL http://localhost:3000/movie-info/{`movie-id`}
-   - Enter a movie-id between 100 and 500
-   - E.g. Go To `http://localhost:3000/movie-info/500`
- - Verify if API data is inserted into the database
-   - `SELECT * FROM movie;`
-
-
 # Building Express APP with Public Holiday API
 
 ## Explore Public Holiday API
@@ -60,10 +21,10 @@
 ## Load database schema for Public Holiday API
 - Open a terminal
 - Import database schema and create tables
-   - `docker exec -i postgres-db psql -U admin_user -d movie_db  < schema/holiday.sql`
+   - `docker exec -i postgres-db psql -U admin_user -d holiday_db  < schema/holiday.sql`
      - You should see a message CREATE TABLE
  - Verify the schema from terminal previosly logged in to the database
-   - `movie_db=# \d`
+   - `holiday_db=# \d`
  - `country` & `holiday` new tables are added
 
 ## Fetch info from Public Holiday API 
@@ -71,7 +32,7 @@
 - Open a new tab and go to http://localhost:3000/list-countries
   - Available country code is listed here. Make a note we use only these country code to fetch the holiday information
 - Let us get the information country US and the year 2018 using [curl](https://curl.se/docs/)
-- Open a terminal and run the following command
+- Open new terminal and run the following command
   ```
   curl -X POST -d "year=2018&counryCode=US" http://localhost:3000/country-holiday
   ```

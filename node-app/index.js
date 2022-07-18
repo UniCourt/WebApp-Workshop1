@@ -20,7 +20,7 @@ setInterval(() => {
 const credentials = {
   user: "admin_user",
   host: "postgres",
-  database: "movie_db",
+  database: "holiday_db",
   password: "admin_pass",
   port: 5432,
 };
