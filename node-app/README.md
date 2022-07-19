@@ -17,12 +17,23 @@
 
 - Now let us call this public API from our Express APP and insert data into  the database
 
+## Load database schema for Movie API
+ - Import database schema and create tables
+   - `docker exec -i postgres-db psql -U admin_user -d movie_db  < schema/movie.sql`
+     - You should see a message CREATE TABLE
+ - Open new terminal & login to the databse using password
+   - `docker exec -it postgres-db psql -U admin_user -d movie_db  -W`
+ - Check if all the tables are loaded
+   - `movie_db=# \d`
+ - Note: You should see all the relations
 
 ## Load database schema for Public Holiday API
 - Open a terminal
 - Import database schema and create tables
    - `docker exec -i postgres-db psql -U admin_user -d holiday_db  < schema/holiday.sql`
      - You should see a message CREATE TABLE
+ - Open new terminal & login to the databse using password
+   - `docker exec -it postgres-db psql -U admin_user -d movie_db  -W`
  - Verify the schema from terminal previosly logged in to the database
    - `holiday_db=# \d`
  - `country` & `holiday` new tables are added
