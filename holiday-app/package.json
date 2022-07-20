@@ -1,0 +1,28 @@
+{
+  "name": "holiday-app",
+  "version": "1.0.0",
+  "description": "Workshop Node js hands on project",
+  "main": "src/index.js",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "express": "^4.17.2",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "nodemon  src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/UniCourt/WebApp-Workshop1.git"
+  },
+  "author": "noelneethanr@unicourt.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UniCourt/WebApp-Workshop1/issues"
+  },
+  "homepage": "https://github.com/UniCourt/WebApp-Workshop1#readme"
+}
