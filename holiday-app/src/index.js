@@ -6,7 +6,10 @@ const bodyParser = require('body-parser');
 
 //App routes
 app.use(bodyParser.urlencoded({extended: true}));
-app.use('/api',routes);
+
+app.get('/', function(req, res){
+    res.send("Hello world");
+});
 
 app.listen(port, ()=> {
     console.log(`Express app is running on port ${port}`);

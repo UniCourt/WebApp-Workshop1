@@ -23,6 +23,6 @@
 
 ## Node workshop links
   - Javascript [Playground](playground/README.md)
-  - TMDB API [Express app](node-app/README.md) 
+  - Holiday API [Node App](holiday-app/README.md) 
 
 
