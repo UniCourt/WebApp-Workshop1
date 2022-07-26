@@ -1,10 +1,11 @@
-const image = document.getElementById('myImage');
-const statusText = document.getElementById('bulb-status');
-
-const waitSeconds = 2;
-const miliSeconds = waitSeconds * 1000;
-
 function changeImage() {
+
+    const image = document.getElementById('myImage');
+    const statusText = document.getElementById('bulb-status');
+
+    const waitSeconds = 2;
+    const miliSeconds = waitSeconds * 1000;
+
     console.log("Button clicked")
 
     if (image.src.match("bulbon")) {
