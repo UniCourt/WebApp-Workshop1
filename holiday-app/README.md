@@ -22,7 +22,7 @@
       1. `$ sudo docker exec -i postgres-db psql -U node_user -d holiday_db  < schema/holiday.sql`
    4. You should see a message CREATE TABLE
    5. Open new terminal & login to the databse using password
-      1. `$ sudo docker exec -it postgres-db psql -U admin_user -d holiday_db  -W`
+      1. `$ sudo docker exec -it postgres-db psql -U node_user -d holiday_db`
    6. Check if all the tables are loaded
       1. `holiday_db=# \d`
       2.  You should see all the relations
