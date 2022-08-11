@@ -17,7 +17,7 @@
 
 ## Load database schema for Holiday API
    1. Navigate to the foler from terminal `$ cd /WORKSHOP/WebApp-Workshop1/holiday-app/`
-   2. Initalize postgres `$ sudo docker-compose up postgres -d`
+   2. Initalize postgres `$ sudo docker-compose up -d postgres`
    3. Import database schema and create tables
       1. `$ sudo docker exec -i postgres-db psql -U node_user -d holiday_db  < schema/holiday.sql`
    4. You should see a message CREATE TABLE
@@ -28,9 +28,13 @@
       2.  You should see all the relations
 
 ## Bring up the Express node app
-   1. Open another terminal from the same file location run the follwing command
+   1. Open another terminal from the same file location run the follwing command (Use this terminal to monitor the docker-compose logs)
    2. `$ sudo docker-compose up`
-   3. You should see a message on the terminal
-   4. Server is running at http://localhost:3000
-   5. Open `http://localhost:3000/` in your browser
-   6. You should see **Express + TypeScript Server** message on the browser
+   3. Open another terminal and execute into the container
+      1. `$ sudo docker exec -ti holiday-node-app /bin/sh`
+      2. **`/home/node_app # npm run build`** To compile the type script
+      3. **`/home/node_app # npm run start`** To run the node application
+   4. You should see a message on the terminal
+   5. ⚡️[server]: Server is running at http://localhost:3000
+   6. Open `http://localhost:3000/` in your browser
+   7. You should see **Express + TypeScript Server** message on the browser

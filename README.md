@@ -37,7 +37,7 @@ alt  2.  Create a directory named WORKSHOP, run the command in the terminal (`ct
   4. `$ sudo docker run hello-world` to explore more
 
 ## What will you learn by the end of this workshop?
-- By the end of this workshop you will understand what Docker and how it is containerized for applications
+- By the end of this workshop you will understand what Docker and how it is containerized for the applications
 - 
 
 ## **Schedule**
