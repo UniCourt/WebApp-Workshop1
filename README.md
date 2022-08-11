@@ -34,6 +34,7 @@ alt  2.  Create a directory named WORKSHOP, RUn the command in the terminal (`ct
      3. Verify the installed version with the following command
      4. `$ docker-compose --version`
      5. Output: docker-compose version 1.25.0
+  4. `$ docker run hello-world` to explore more
 
 ## What will you learn by the end of this workshop?
 - By the end of this workshop you will understand what Docker and how it is containerized for applications
@@ -42,11 +43,11 @@ alt  2.  Create a directory named WORKSHOP, RUn the command in the terminal (`ct
 ## **Schedule**
 | Time                    |   Topics
 | --                      |   --
-| 09:00 - 10.00           |  [`Introduction to Docker`]()
+| 09:00 - 10.00           |  [`Introduction to Docker`](docs/Docker.pdf)
 | 10.00 - 11.00           |  Docker excersize
 | 11.00 - 11.15           |  [ `Q & A section` ] 
-| 11.15 - 12.00           |  [`Javascript Intruduction`]()
+| 11.15 - 12.00           |  [`Javascript Intruduction`](docs/Javascript_NodeJS.pdf)
 | 12.00 - 12.30           |  [`Javascript exercise`](playground/README.md)
-| 12.30 - 1.00            |  [`Intruduction to Type script & Node JS`]()
+| 12.30 - 1.00            |  [`Intruduction to Type script & Node JS`](docs/Javascript_NodeJS.pdf)
 | 1.00  - 2.00            |  [ `Break` ]
 | 2.00  - 4.00            |  [ `Node JS exercise` ](holiday-app/README.md) 
