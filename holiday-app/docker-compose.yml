@@ -14,6 +14,7 @@ services:
       - ./src:/home/node_app/src
     ports:
       - 3000:3000
+    command: ["sh", "-c", "while :; do sleep 10; done"]
       
   postgres:
     image: postgres:13-alpine
