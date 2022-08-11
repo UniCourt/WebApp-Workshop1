@@ -38,7 +38,9 @@ alt  2.  Create a directory named WORKSHOP, run the command in the terminal (`ct
 
 ## What will you learn by the end of this workshop?
 - By the end of this workshop you will understand what Docker and how it is containerized for the applications
-- 
+- How Javascript works in the browser
+- Async / await in Javascript
+- API based node js application with express framework
 
 ## **Schedule**
 | Time                    |   Topics
