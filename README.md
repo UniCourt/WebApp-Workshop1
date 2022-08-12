@@ -1,28 +1,55 @@
-# Node Workshop 1
-## Prerequisites
- - Any Linux machine/VM with following packages installed
- - Docker  ( https://docs.docker.com/engine/install/ubuntu/ )
-     * To install docker go to your cloned repository and run the following command
-     * `sudo prerequisites/install_docker.sh`
- - Git     ( https://www.makeuseof.com/install-configure-git-on-linux/ )
-     * Create an account on GitHub (if you don't already have one)
-     * Fork [this](https:https://github.com/UniCourt/WebApp-Workshop1) repository and then clone it to your machine
-     * You can refer [this](https://docs.github.com/en/get-started/quickstart/fork-a-repo) guide to understand how to fork and clone
+# Docker Workshop
 
- - VS code IDE ( https://linuxize.com/post/how-to-install-visual-studio-code-on-ubuntu-20-04/ )
- - Internet Connection
- 
-## Workshop environment setup 
- - Create a folder `workshop`
-   - `mkdir workshop`
- - Navigate to the folder `workshop` and clone the from your personal repo using HTTPS
- - `cd workshop`
- - git clone `<https://github.com/{username}-uc/WebApp-Workshop1.git>`
- - Navigate to the folder `workshop/WebApp-Workshop1/`
+One Day workshop on understanding Docker to package applications into containers—standardized executable components combining application source code with the operating system.
 
+## Prerequisite
 
-## Node workshop links
-  - Javascript [Playground](playground/README.md)
-  - TMDB API [Express app](node-app/README.md) 
+### Linux machine/VM with following packages installed
+  1. Install Ubuntu 20.04.4 LTS from [here](https://releases.ubuntu.com/20.04/)
+  2. Install Git from your terminal by running follwing commands
+     1. `$ sudo apt-get update`
+     2. `$ sudo apt-get install git`
+     3. Verify the installation was successful by typing
+     4. `$ git --version`
 
+### GitHub account
+  1.  Create an account on [GitHub](https://github.com/join) (if you don't already have one)
+alt  2.  Create a directory named WORKSHOP, run the command in the terminal (`ctrl+shift+t`)
+      1.  `$ mkdir WORKSHOP`
+  3.  Fork [this](https://github.com/UniCourt/WebApp-Workshop1) repository and then clone it inside the WORKSHOP directory
+  4.  You can refer [this](https://docs.github.com/en/get-started/quickstart/fork-a-repo) guide to understand how to fork and clone
 
+### Docker instalation
+  1.  To install docker go to your cloned repository and run the following command from the terminal
+      1.  `$ cd WORKSHOP/WebApp-Workshop1/`
+      2.  `$ sudo chmod +x prerequisites/install_docker.sh`
+      3.  `$ sudo apt-get update`
+      4.  `$ sudo prerequisites/install_docker.sh`
+  2. Verify Docker is installed 
+     1. `$ sudo docker -v`
+     2. Output : Docker version 20.10.12, build e91ed57`
+  3. Install Docker-compose by running the follwing command
+     1. `$ sudo apt-get update`
+     2. `$ sudo apt-get install docker-compose`
+     3. Verify the installed version with the following command
+     4. `$ sudo docker-compose --version`
+     5. Output: docker-compose version 1.25.0
+  4. `$ sudo docker run hello-world` to explore more
+
+## What will you learn by the end of this workshop?
+- By the end of this workshop you will understand what Docker and how it is containerized for the applications
+- How Javascript works in the browser
+- Async / await in Javascript
+- API based node js application with express framework
+
+## **Schedule**
+| Time                    |   Topics
+| --                      |   --
+| 09:00 - 10.00           |  [`Introduction to Docker`](docs/Docker.pdf)
+| 10.00 - 11.00           |  Docker exercise
+| 11.00 - 11.15           |  [ `Q & A section` ] 
+| 11.15 - 12.00           |  [`Javascript Intruduction`](docs/Javascript_NodeJS.pdf)
+| 12.00 - 12.30           |  [`Javascript exercise`](playground/README.md)
+| 12.30 - 1.00            |  [`Intruduction to typescript & node js`](docs/Javascript_NodeJS.pdf)
+| 1.00  - 2.00            |  [ `Break` ]
+| 2.00  - 4.00            |  [ `node js exercise` ](holiday-app/README.md) 
