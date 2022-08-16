@@ -5,11 +5,11 @@ class Server {
   
   private app: express.Application;
   private pool: Pool;
-  private query: any;
 
   constructor() {
     this.app = express();
     this.portConfig();
+    this.dbConfig();
     this.routes();
   }
 
@@ -19,7 +19,7 @@ class Server {
   }
 
   //DB configuration
-  public dbCOnfig() {
+  public dbConfig() {
     this.pool = new Pool({
       host: process.env["POSTGRES_HOST"],
       port: parseInt(<string>process.env["POSTGRES_PORT"]),
@@ -29,7 +29,7 @@ class Server {
     });
   }
 
-  public async queryPool(query: string) {
+  public async query(query: string) {
     return await this.pool.query(query);
   }
 
@@ -38,9 +38,12 @@ class Server {
     this.app.get('/', async (req: Request, res: Response)=> {
 
       const sqlQuery: string = "SELECT NOW()";
-      const result: any = await this.queryPool(sqlQuery);
+      const result = await this.query(sqlQuery)
 
-      res.send('<h2>Express + TypeScript Server</h2>', result.rows);
+      res.json({
+        message: 'Express + TypeScript Server',
+        dbResult: result.rows
+      });
     });
 
     this.app.get("/country-list", async (req: Request, res: Response) => {

@@ -33,4 +33,8 @@
    3. You should see a message on the terminal
    4. ⚡️[server]: Server is running at http://localhost:3000
    5. Open `http://localhost:3000/` in your browser
-   6. You should see **Express + TypeScript Server** message on the browser
+   6. You should see following message
+   ```
+   {"message":"Express + TypeScript Server",
+   "dbResult":[{"now":"2022-08-16T09:24:50.246Z"}]}
+   ```
