@@ -31,7 +31,11 @@ class Server {
 
   public routes() {
 
-    this.app.get('/', (req: Request, res: Response)=> {
+    this.app.get('/', async (req: Request, res: Response)=> {
+
+      const sqlQuery: string = "SELECT NOW()";
+      //const result: [] = await this.query(sqlQuery);
+
       res.send('<h2>Express + TypeScript Server</h2>');
     });
 
