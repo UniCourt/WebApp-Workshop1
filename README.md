@@ -34,8 +34,13 @@ alt  2.  Create a directory named WORKSHOP, run the command in the terminal (`ct
      3. Verify the installed version with the following command
      4. `$ sudo docker-compose --version`
      5. Output: docker-compose version 1.25.0
-  4. `$ sudo docker run hello-world` to explore more
+  4. Download the follwing docker images to your local machine
+     1. `$ sudo docker pull node:alpine3.15`
+     2. `$ sudo docker pull postgres:13-alpine`
+  5. `$ sudo docker run hello-world` to explore more
 
+
+  l
 ## What will you learn by the end of this workshop?
 - By the end of this workshop you will understand what Docker and how it is containerized for the applications
 - How Javascript works in the browser
