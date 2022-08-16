@@ -30,7 +30,7 @@ class Server {
   }
 
   public async queryPool(query: string) {
-    return await 
+    return await this.pool.query(query);
   }
 
   public routes() {
@@ -38,9 +38,9 @@ class Server {
     this.app.get('/', async (req: Request, res: Response)=> {
 
       const sqlQuery: string = "SELECT NOW()";
-      //const result: [] = await this.query(sqlQuery);
+      const result: any = await this.queryPool(sqlQuery);
 
-      res.send('<h2>Express + TypeScript Server</h2>');
+      res.send('<h2>Express + TypeScript Server</h2>', result.rows);
     });
 
     this.app.get("/country-list", async (req: Request, res: Response) => {
