@@ -19,10 +19,10 @@
    1. Navigate to the foler from terminal `$ cd /WORKSHOP/WebApp-Workshop1/holiday-app/`
    2. Initalize postgres `$ sudo docker-compose up -d postgres`
    3. Import database schema and create tables
-      1. `$ sudo docker exec -i postgres-db psql -U node_user -d holiday_db  < schema/holiday.sql`
+      1. `$ sudo docker exec -i postgres14-db psql -U node_user -d holiday_db  < schema/holiday.sql`
    4. You should see a message CREATE TABLE
    5. Open new terminal & login to the databse using password
-      1. `$ sudo docker exec -it postgres-db psql -U node_user -d holiday_db`
+      1. `$ sudo docker exec -it postgres14-db psql -U node_user -d holiday_db`
    6. Check if all the tables are loaded
       1. `holiday_db=# \d`
       2.  You should see all the relations
@@ -38,3 +38,42 @@
    {"message":"Express + TypeScript Server",
    "dbResult":[{"now":"2022-08-16T09:24:50.246Z"}]}
    ```
+   7. Access the available app API through curl command open new terminal
+      1. GET /
+      ```
+      curl http://localhost:3000/ | jq '.'
+      ```
+      Output will be as follows
+      ```
+      {
+         "message": "Express + TypeScript Server",
+         "dbResult": [
+            {
+            "now": "2022-08-16T11:05:59.274Z"
+            }
+         ]
+      }
+      ```
+      2. GET /country-list
+      ```
+      curl http://localhost:3000/country-list | jq '.'
+      ```
+      Output :
+      ```
+      [
+        {
+          "countryCode": "AD",
+          "name": "Andorra"
+        },
+        {
+          "countryCode": "AL",
+          "name": "Albania"
+        },
+        ...
+      ```
+   8. Bring down the application by **down** command
+      1. Run the below command from the directory location ~#/WORKSHOP/WebApp-Workshop1/holiday-app/~
+      2. `sudo docker-compose down`
+  
+
+   

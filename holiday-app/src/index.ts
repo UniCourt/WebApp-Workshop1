@@ -1,6 +1,6 @@
 import express, { Express, Request, Response } from "express";
 import axios from "axios";
-import { Pool } from "pg";
+import { Pool } from 'pg';
 class Server {
   
   private app: express.Application;
