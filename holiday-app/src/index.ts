@@ -4,7 +4,8 @@ import { Pool } from "pg";
 class Server {
   
   private app: express.Application;
-  private query: Pool;
+  private pool: Pool;
+  private query: any;
 
   constructor() {
     this.app = express();
@@ -19,14 +20,17 @@ class Server {
 
   //DB configuration
   public dbCOnfig() {
-    this.query = new Pool({
+    this.pool = new Pool({
       host: process.env["POSTGRES_HOST"],
       port: parseInt(<string>process.env["POSTGRES_PORT"]),
       user: process.env["POSTGRES_USER"],
       password: process.env["POSTGRES_PASSWORD"],
       database: process.env["POSTGRES_DB"]
-
     });
+  }
+
+  public async queryPool(query: string) {
+    return await 
   }
 
   public routes() {
