@@ -1,5 +1,5 @@
 # Base image 
-FROM node:alpine3.15
+FROM node:16.16.0-alpine3.15
 
 LABEL maintainer="UniCourt" \
     git-repo="git@github.com:UniCourt/WebApp-Workshop1.git"
