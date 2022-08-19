@@ -65,5 +65,6 @@ One Day workshop on understanding Docker to package applications into containers
 | 09:00 - 11.00           |  [`Docker`](docs/Docker.pdf)
 | 11.15 - 01.00           |  [`Git`](git/github_intro.md)
 | 1.00  - 2.00            |  [ `Break` ]
-| 2.00 -  3.00            |  [`Javascript & Typescript`](docs/Javascript_&_NodeJS.pdf)
+| 2.00  - 2.30            |  [`Javascript`](docs/Javascript_&_NodeJS.pdf)
+| 2.30  - 3.00            |  [`Typescript`](docs/TypeScript.pdf)
 | 3.00  - 5.00            |  [ `Node js` ](holiday-app/README.md) 
