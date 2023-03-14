@@ -20,7 +20,7 @@ One Day workshop on understanding Docker to package applications into containers
 
 ### GitHub account
   1.  If you don't have the account on github then create an account on [GitHub](https://github.com/join)
-  2.  Create a new work directory named `WORKSHOP`, by running following command in the terminal.
+  2.  Create a new work directory named `WORKSHOP`, by running following command in the terminal inside the `/home` directory.
       -  ```
          mkdir WORKSHOP
          ```
@@ -39,7 +39,7 @@ One Day workshop on understanding Docker to package applications into containers
   3. Install Docker-compose by running the follwing command:
       - The following command will download the 2.16.0 release and save the executable file at /usr/local/bin/docker-compose, which will make this software globally accessible as docker-compose:
          ```
-         curl -SL https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
+         sudo curl -SL https://github.com/docker/compose/releases/download/v2.16.0/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
          ```
       - Set the correct permissions so that the docker-compose command is executable:
          ```
