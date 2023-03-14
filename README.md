@@ -7,15 +7,23 @@ One Day workshop on understanding Docker to package applications into containers
 ### Linux machine with following packages installed
   1. Install Ubuntu 22.04 LTS from [here](https://releases.ubuntu.com/22.04/)
   2. Install Git from your terminal by running following commands
-     1. `sudo apt-get update`
-     2. `sudo apt-get install git`
+     -   ```
+         sudo apt-get update
+         ```
+     -   ```
+         sudo apt-get install git
+         ```
   3. Verify the installation was successful by typing
-     1. `git --version`
+     -   ```
+         git --version
+         ```
 
 ### GitHub account
   1.  If you don't have the account on github then create an account on [GitHub](https://github.com/join)
   2.  Create a new work directory named `WORKSHOP`, by running following command in the terminal.
-      1.  `mkdir WORKSHOP`
+      -  ```
+         mkdir WORKSHOP
+         ```
   3.  Fork the [current](https://github.com/UniCourt/WebApp-Workshop1) repository.
   4.  Clone your forked repository inside the `WORKSHOP` directory.
     
@@ -48,15 +56,25 @@ One Day workshop on understanding Docker to package applications into containers
          ```
          Docker Compose is now successfully installed on your system.
   4. Download the follwing docker images to your local machine  
-     1. `docker pull node:18.15.0-alpine3.17`
-        1. Verify the image is pulled into your local machine
-        2. `docker run --rm -ti node:18.15.0-alpine3.17 node -v`
-        3. Output: **v18.15.0**
-     2. `docker pull postgres:14-alpine`
-        1. Verify the image
-        2. `docker run --rm -ti postgres:14-alpine  psql -V`
-        3. Output: **psql (PostgreSQL) 14.5**
-     3. `docker pull nginx:1.23.0-alpine`
+     -   ```
+         docker pull node:18.15.0-alpine3.17
+         ```
+         - Verify the image is pulled into your local machine
+           ``` 
+            docker run --rm -ti node:18.15.0-alpine3.17 node -v
+            ```
+            Output: **v18.15.0**
+     -   ```
+         docker pull postgres:14-alpine
+         ```
+         - Verify the image
+            ```
+            docker run --rm -ti postgres:14-alpine  psql -V
+            ```
+            Output: **psql (PostgreSQL) 14.5**
+     -   ```
+         docker pull nginx:1.23.0-alpine
+         ```
 
 ## What will you learn by the end of this workshop?
 - By the end of this workshop you will understand what Docker and how it is containerized for the applications
