@@ -20,7 +20,7 @@ One Day workshop on understanding Docker to package applications into containers
 
 ### GitHub account
   1.  If you don't have the account on github then create an account on [GitHub](https://github.com/join)
-  2.  Create a new work directory named `WORKSHOP`, by running following command in the terminal inside the `/home` directory.
+  2.  Create a new work directory named `WORKSHOP` inside the `/home` directory, by running following command in the terminal.
       -  ```
          mkdir WORKSHOP
          ```
