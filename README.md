@@ -4,7 +4,7 @@ One Day workshop on understanding Docker to package applications into containers
 
 ## Prerequisite
 
-### Linux machine/VM with following packages installed
+### Linux machine with following packages installed
   1. Install Ubuntu 22.04 LTS from [here](https://releases.ubuntu.com/22.04/)
   2. Install Git from your terminal by running following commands
      1. `sudo apt-get update`
@@ -16,14 +16,14 @@ One Day workshop on understanding Docker to package applications into containers
   1.  If you don't have the account on github then create an account on [GitHub](https://github.com/join)
   2.  Create a new work directory named `WORKSHOP`, by running following command in the terminal.
       1.  `mkdir WORKSHOP`
-  3.  Fork [the](https://github.com/UniCourt/WebApp-Workshop1) repository.
+  3.  Fork the [current](https://github.com/UniCourt/WebApp-Workshop1) repository.
   4.  Clone your forked repository inside the `WORKSHOP` directory.
     
 > **Info:**
 > You can refer [this](https://docs.github.com/en/get-started/quickstart/fork-a-repo) guide to understand how to fork and clone
 
 ### Docker instalation
-  1.  To install docker follow the below mentioned steps in the [documentation](https://docs.docker.com/engine/install/ubuntu/).
+  1.  To install docker follow the below mentioned steps.
       1.  [Set up the repository](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository:~:text=from%20the%20repository.-,Set%20up%20the%20repository,-Update%20the%20apt)
       2.  [Install Docker Engine](https://docs.docker.com/engine/install/ubuntu/#:~:text=/dev/null-,Install%20Docker%20Engine,-Update%20the%20apt)
   2. Configure docker to run without sudo.
