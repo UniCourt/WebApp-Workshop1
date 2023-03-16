@@ -77,20 +77,15 @@ One Day workshop on understanding Docker to package applications into containers
          ```
 
 ## What will you learn by the end of this workshop?
-- By the end of this workshop you will understand what Docker and how it is containerized for the applications
-- How Javascript works in the browser
-- Async / await in Javascript
-- API based node js application with express framework
+- By the end of this workshop you will understand what Docker and how it is containerized for the applications.
+- You will know the concepts of javascript & typescript.
+- Build basic application on nodejs using javascript/typescript.
 
-## To Do
-   Follow this tutorial and try it on your local machine <br/>
-   [`Node application setup`](holiday-app/README.md)
 ## **Schedule**
 | Time                    |   Topics
 | --                      |   --
-| 09:00 - 11.00           |  [`Docker`](docs/Docker.pdf)
-| 11.15 - 01.00           |  [`Git`](git/github_intro.md)
+| 09:00 - 10.00           |  [`Docker`](docs/Docker.pdf)
+| 10.30 - 01.00           |  [`Git`](git/github_intro.md)
 | 1.00  - 2.00            |  [ `Break` ]
-| 2.00  - 2.30            |  [`Javascript`](docs/Javascript_&_NodeJS.pdf)
-| 2.30  - 3.00            |  [`Typescript`](docs/TypeScript.pdf)
+| 2.00  - 3.00            |  [`Javascript`](docs/Javascript_&_NodeJS.pdf) & [`Typescript`](docs/TypeScript.pdf)
 | 3.00  - 5.00            |  [ `Node js` ](holiday-app/README.md) 
