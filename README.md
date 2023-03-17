@@ -92,6 +92,10 @@ One Day workshop on understanding Docker to package applications into containers
          docker pull nginx:1.23.0-alpine
          ```
 
+### VS Code setup
+   - [Install VS Code](https://code.visualstudio.com/Download)
+   - [Install Docker extension on your VS Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+
 ## What will you learn by the end of this workshop?
 - By the end of this workshop you will understand what Docker and how it is containerized for the applications.
 - You will know the concepts of javascript & typescript.
