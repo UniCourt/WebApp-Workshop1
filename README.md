@@ -20,12 +20,28 @@ One Day workshop on understanding Docker to package applications into containers
 
 ### GitHub account
   1.  If you don't have the account on github then create an account on [GitHub](https://github.com/join)
-  2.  Create a new work directory named `WORKSHOP` inside the `/home` directory, by running following command in the terminal.
+  2. Configure SSH key by following the below steps
+      - [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key)
+      - [Adding your SSH key to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
+      - To list all contents of ssh folder
+         ```
+         ls -al ~/.ssh
+         ```
+      - To instal xclip
+         ```
+         sudo apt install xclip
+         ```
+      - Copy ssh key
+         ```
+         xclip -sel clip < ~/.ssh/id_ed25519.pub
+         ```
+      - [Adding a new SSH key to your Github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account)
+  3.  Create a new work directory named `WORKSHOP` inside the `/home` directory, by running following command in the terminal.
       -  ```
          mkdir WORKSHOP
          ```
-  3.  Fork the [current](https://github.com/UniCourt/WebApp-Workshop1) repository.
-  4.  Clone your forked repository inside the `WORKSHOP` directory.
+  4.  Fork the [current](https://github.com/UniCourt/WebApp-Workshop1) repository.
+  5.  Clone your forked repository inside the `WORKSHOP` directory.
     
 > **Info:**
 > You can refer [this](https://docs.github.com/en/get-started/quickstart/fork-a-repo) guide to understand how to fork and clone
