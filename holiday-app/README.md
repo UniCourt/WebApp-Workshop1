@@ -72,7 +72,7 @@
         ...
       ```
    8. Bring down the application by **down** command
-      1. Run the below command from the directory location ~#/WORKSHOP/WebApp-Workshop1/holiday-app/~
+      1. Run the below command from the directory location #/WORKSHOP/WebApp-Workshop1/holiday-app/
       2. `sudo docker-compose down`
   
 
