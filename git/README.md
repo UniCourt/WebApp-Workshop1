@@ -1,61 +1,4 @@
 # Basic GIT Commands:
-## Create a gitHub account
-https://github.com/
-
-
-
-Run following command to verify if Git works on your computer:
-
-    git --version
-
-## Configure git:
-After installing to start using git from your computer, you must enter your credentials to identify yourself as the author of your work. The username and email address should match the ones you use in GitHub.
-
-Add your user name:
-
-    git config --global user.name "your_username"
-
-Add your email address:
-
-    git config --global user.email "your_email_address@example.com"
-
-To check the configuration, run:
-
-    git config --global --list
-
-Add ssh keys to your GitHub account:
-    
-    1. sudo apt install xclip
-    2. ssh-keygen -t ed25519 -C  "your_email"
-    3. xclip -sel clip < ~/.ssh/id_ed25519.pub
-    4. Visit this url: https://github.com/settings/ssh/new. Paste the key and save.
-
-
-## Fork a repository
-Forking refers to making a copy of a project you want to contribute to. Now lets fork a project provided to complete this activity. 
-
-Follow these steps to fork a project:
-
-1. Go to the project url using this link:https://github.com/UniCourt/WebApp-Workshop1 or any other link
-2. Click on the fork button in the project page
-3. Select a namespace to fork our project. Select your namespace here.
-
-## Clone a repository
-Cloning a repository means the files from the remote repository are downloaded to your computer, and a connection is created.
-
-This connection requires you to add credentials. There are two ways to add credentials SSH and HTTPS. We use SSH method here.
-
-Authenticate with GitLab by following the instructions in the SSH documentation.
-
-1. Go to your project’s landing page and click Clone.
-2. Copy the URL for Clone with SSH.
-3. Open a terminal and go to the directory where you want to clone the files. Run this command:
-
-        git clone <url_to_clone>
-
-    For example,
-
-        git clone "git@github.com:UniCourt/WebApp-Workshop1.git"
 
 ## View your remote repositories
 To view the remote repositories that you have added, run following command:
@@ -96,12 +39,6 @@ To see what branch you are currently on try the following command.
 
 ```shell
 git branch
-```
-
-Make sure you are on the exercise branch by running
-
-```shell
-git checkout exercise
 ```
 
 ## Download the latest changes in the project
