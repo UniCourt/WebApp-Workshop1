@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+    service-nodejs-app: 
+        container_name: nodejs-app
+        image: testing-nodejs-app:latest
+        build:  
+            context: .
+            dockerfile: Docker/dockerfile
+        ports:
+          - "6004:6004"
+        volumes:
+          - ./nodejs-app/:/home/uca_user/node/app
+          - /home/uca_user/node/app/node_modules/
+        command: npm run start

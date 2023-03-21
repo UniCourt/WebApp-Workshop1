@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    color: gray;
+    height: 100vh;
+}
+.home{
+    height: 100vh;
+}
+p{
+    font-size: 20px;
+}
+.m-h50{
+    min-height: 50px;
+}
+.p0-p40{
+    padding: 0 40px;
+}
+.pl-0{
+    padding-left: 0 !important;
+}
+.pr-0{
+    padding-right: 0 !important;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.m0{
+    margin: 0;
+}
+.cust-card{
+        box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 2px 1px -1px rgb(0 0 0 / 12%);
+        padding: 20px;
+}
+.table-head{
+    background-color: rgb(55 111 167);
+    color: white;
+    padding: 18px 20px;
+}
+.bg-green{
+background-color: #28a745;
+}
+.mb-5{
+    margin-bottom: 5px !important;
+}
+.mr-4{
+    margin-right: 4px;
+}
+.mr-20{
+    margin-right: 20px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+th{
+    font-size: 14px;
+    color: #212529;
+}
+td{
+    font-size: 12px;
+}
+.ed-dl{
+    padding: 2px 5px;
+}
+.fnt-b{
+    font-weight: bold;
+}
+.add{
+    background-color: rgb(99 156 211);
+    border: rgb(99 156 211);
+}
+.update{
+    background-color: rgb(99 156 211);
+    border: rgb(99 156 211);
+}
+.search-btn{
+    background-color: rgb(99 156 211);
+    border: rgb(99 156 211);
+    color: white;
+}
+
+.t-center{
+    text-align: center;
+}
+
+
+.mainbox {
+    background-color: #95c2de;
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    position: relative;
+  }
+  
+.err {
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    left: 20%;
+    top: 8%;
+}
+
+.far {
+    position: absolute;
+    font-size: 8.5rem;
+    left: 42%;
+    top: 15%;
+    color: #ffffff;
+}
+
+.err2 {
+    color: #ffffff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    left: 68%;
+    top: 8%;
+}
+
+.msg {
+    color: #000000;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    position:absolute;
+    left: 16%;
+    top: 45%;
+    width: 75%;
+}

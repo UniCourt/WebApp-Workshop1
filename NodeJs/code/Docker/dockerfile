@@ -1,0 +1,11 @@
+FROM node:18.15.0-alpine3.17 As development
+
+WORKDIR /home/uca_user/node/app
+
+COPY nodejs-app/*.json ./
+
+RUN npm install
+
+COPY nodejs-app ./
+
+CMD [ "nodemon","index.js" ]
