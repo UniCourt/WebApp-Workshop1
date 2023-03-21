@@ -20,6 +20,13 @@ For example,
 
     git remote add upstream "git@github.com:UniCourt/WebApp-Workshop1.git"
 
+Fetch all branches from all remotes
+
+    git fetch --all
+
+To sync local repository with remote repository
+
+    git pull upstream <branch_name>
 
 ## Create a branch
 Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository. You always create a branch from an existing branch. Typically, you might create a new branch from the default branch of your repository.
