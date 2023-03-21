@@ -109,4 +109,4 @@ One Day workshop on understanding Docker to package applications into containers
 | 10:30 - 01:00           |  [`Docker`](/Docker/Docker.pdf)
 | 1:00  - 2:00            |  [ `Break` ]
 | 2:00  - 3:00            |  [`Javascript & Typescript`](/JS%20and%20TS/JavaScript%20and%20Typescript.pdf)
-| 3:00  - 5:00            |  [ `Node Js` ](/NodeJs/Node%20Js.pdf)
+| 3:00  - 5:00            |  [ `Node Js` ](/NodeJs/NodeJs.pdf)

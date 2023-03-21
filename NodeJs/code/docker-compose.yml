@@ -10,6 +10,6 @@ services:
         ports:
           - "6004:6004"
         volumes:
-          - ./simple-nodejs-app/:/home/uca_user/node/app
+          - ./nodejs-app/:/home/uca_user/node/app
           - /home/uca_user/node/app/node_modules/
         command: npm run start
