@@ -1,0 +1,12 @@
+FROM node:18.14.2-alpine3.17 As development
+
+WORKDIR /home/uca_user/node/app
+
+COPY simple-nodejs-app/*.json ./
+
+RUN npm install
+
+COPY simple-nodejs-app ./
+
+CMD [ "nodemon","index.js" ]
+
