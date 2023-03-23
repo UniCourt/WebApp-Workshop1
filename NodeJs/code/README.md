@@ -100,3 +100,10 @@ To view a live preview of this application, click [here](http://localhost:6004)
             });
         });
         ```
+
+***Exercise:***
+- Signup to Open AI and generate API_Key
+- Creating ```/chatGPT``` route 
+- Create a search box where user can type description of desired image(s)
+- Use [Open AI API](https://platform.openai.com/docs/api-reference/images) to Generate Image which user types in the search box
+- After completing the exercise push the Changes to your origin and then create a Pull Request to [Unicourt Workshop Repo](https://github.com/UniCourt/WebApp-Workshop1)
