@@ -1,0 +1,21 @@
+{
+  "name": "Simple NodeJs App",
+  "version": "1.0.0",
+  "description": "UniCourt Workshop 1",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private":"true",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.7",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.7",
+    "nodemon": "^2.0.3",
+    "request": "^2.88.2",
+    "wiki-infobox-parser": "^0.1.11"
+  }
+}

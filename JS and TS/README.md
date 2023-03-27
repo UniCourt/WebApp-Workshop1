@@ -79,3 +79,23 @@ printMyData("This is string");
 printMyData(123456);
 printMyData(true);
 ```
+
+## Difference bw JS and TS
+
+### var and let keyword
+
+```
+function printData(){
+
+    if(true){
+        let num1 = 12;
+        var num2 = 10;
+    }
+    console.log(num1);
+    console.log(num2)
+
+}
+
+printData();
+
+```
