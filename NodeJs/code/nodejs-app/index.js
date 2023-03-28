@@ -85,9 +85,9 @@ app.get('/chatGPT', (req, res)=>{
         try {
           const url = 'https://api.openai.com/v1/images/generations'
           const model = "image-alpha-001"
-          const n = 2
           let prompt = req.query.image_desc
-
+          // range of n = [1, 5]
+          let n = Math.min(5, Math.max(1, req.query.image_count))
           const response = await axios.post(url, {
             model,
             prompt,
