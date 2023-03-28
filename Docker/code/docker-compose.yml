@@ -1,11 +1,11 @@
-# version: '3.7'
-# services:
-#   webserver:
-#     build: 
-#       context: .
-#       dockerfile: docker/Dockerfile
-#     container_name: webserver
-#     ports:
-#       - 9000:80
-#     volumes:
-#       - ./public:/usr/share/nginx/html
+version: '3.7'
+services:
+  webserver:
+    build: 
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: webserver
+    ports:
+      - 9000:80
+    volumes:
+      - ./public:/usr/share/nginx/html
