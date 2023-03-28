@@ -97,7 +97,9 @@ app.get('/chatGPT', (req, res)=>{
                 'Authorization' : `Bearer ${process.env.OPENAI_API_KEY}`
             }
           });
-          console.log(response.data.data);
+
+          console.log(response);
+          if(response.status != 200) throw "BAD REQUEST";
           let urls = []
           links = response.data.data
 
@@ -105,7 +107,6 @@ app.get('/chatGPT', (req, res)=>{
             urls.push(item.url)
             // console.log(item)
           })
-        //   console.log(url1, "LINK")
         res.render("imageDisplay", {
             data : {
                 "title" : req.query.image_desc,
@@ -114,7 +115,8 @@ app.get('/chatGPT', (req, res)=>{
         })
         //   res.send(`<img src='${url1}'>`)
         } catch (error) {
-          console.log(error.response);
+            res.render("400")
+          console.log(error);
         }
     })();
     
