@@ -20,7 +20,19 @@ app.get('/', (req, res)=>{
     res.render("dashboard")
 })
 //Nasa route here
-
+app.get('/nasa', (req,res) =>{
+    (async () => {
+        try {
+          url = 'https://api.nasa.gov/planetary/apod?api_key=' + process.env.api_key
+          const response = await axios.get(url);
+          console.log("test");
+          console.log(response.data);
+          res.render('nasa.ejs',{data:response.data})
+        } catch (error) {
+          console.log(error.response);
+        }
+      })();
+    })
 //Search route here
 
 //Starting the server
