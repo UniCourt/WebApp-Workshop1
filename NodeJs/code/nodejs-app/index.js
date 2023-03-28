@@ -7,6 +7,31 @@ const dotenv = require("dotenv");
 const axios = require("axios");
 const { URL } = require("node:url");
 
+async function generateImage({ prompt, size = "256x256", n = 1 }) {
+  return await axios
+    .post(
+      "https://api.openai.com/v1/images/generations",
+      JSON.stringify({
+        prompt,
+        n,
+        size,
+      }),
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${process.env.CHAT_GPT_API_KEY}`,
+        },
+      }
+    )
+    .then(function (response) {
+      return response.data.data[0].url;
+    })
+    .catch(function (error) {
+      console.log(`Image genrator failed with the error: ${error}`);
+      return "";
+    });
+}
+
 //Initializing Express for creating Server
 const app = express();
 //Configuring env
@@ -41,6 +66,17 @@ app.get("/search", async (req, response) => {
   const page = await wiki.page(query);
   const summary = await page.summary();
   response.render("details", { data: summary });
+});
+
+// chatgpt route here
+app.get("/chatgpt", async (req, res) => {
+  if (req.originalUrl === "/chatgpt") {
+    res.render("chatgpt");
+    return;
+  }
+  const prompt = req.originalUrl.split("=")[1];
+  const image = await generateImage({ prompt });
+  res.render("image", { data: { image: image, title: prompt } });
 });
 
 //Starting the server
