@@ -21,7 +21,10 @@
                 </div>
             </div>
             <div class="col-10 pr-0">
-                <img src="<%= data.url %>" alt="">
+                <% data.url.forEach(element => { %>
+                 
+                  <img src="<%= element %>" alt="">
+                <% }) %>
             </div>
         </div>
         <a type="submit" class="btn btn-secondary add" href="/">Back</a>

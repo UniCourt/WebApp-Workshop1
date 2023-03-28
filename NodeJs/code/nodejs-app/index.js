@@ -72,8 +72,52 @@ app.get('/search', (req, response)=>{
                 })
             }
         })
-        // response.send("SUCCESS")
     })
+})
+
+app.get('/chatGPT', (req, res)=>{
+    if(req.originalUrl === "/chatGPT") {
+        res.render("chatGPT")
+        return;
+    }
+
+    (async () => {
+        try {
+          const url = 'https://api.openai.com/v1/images/generations'
+          const model = "image-alpha-001"
+          const n = 2
+          let prompt = req.query.image_desc
+
+          const response = await axios.post(url, {
+            model,
+            prompt,
+            n,
+          }, {
+            headers: {
+                'Authorization' : `Bearer ${process.env.OPENAI_API_KEY}`
+            }
+          });
+          console.log(response.data.data);
+          let urls = []
+          links = response.data.data
+
+          links.forEach(item => {
+            urls.push(item.url)
+            // console.log(item)
+          })
+        //   console.log(url1, "LINK")
+        res.render("imageDisplay", {
+            data : {
+                "title" : req.query.image_desc,
+                "url" : urls
+            }
+        })
+        //   res.send(`<img src='${url1}'>`)
+        } catch (error) {
+          console.log(error.response);
+        }
+    })();
+    
 })
 //Starting the server
 app.listen(6004, console.log("Listening at port 6004..."));
