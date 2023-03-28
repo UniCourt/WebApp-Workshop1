@@ -16,7 +16,9 @@ app.use("/static", express.static(__dirname + "/static/"));
 app.set("view engine", 'ejs');
 
 //Dashboard route here
-
+app.get('/', (req, res)=>{
+    res.render("dashboard")
+})
 //Nasa route here
 
 //Search route here
