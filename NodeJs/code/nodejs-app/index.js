@@ -34,6 +34,46 @@ app.get('/nasa', (req,res) =>{
       })();
     })
 //Search route here
+app.get('/search', (req, response)=>{
+    if(req.originalUrl === "/search"){
+        response.render("search")
+        return;
+    }
 
+    let url = "https://en.wikipedia.org/w/api.php"
+    let params = {
+        action: "opensearch",
+        search: req.query.person,
+        limit: "1",
+        namespace: "0",
+        format: "json"
+    }
+
+    url = url + "?"
+    Object.keys(params).forEach( (key) => {
+        url += '&' + key + '=' + params[key] 
+    });
+
+    request(url , (err, res, body) => {
+        if(err) throw err;
+
+        result = JSON.parse(body)
+        console.log(result);
+
+        data = result[3][0]
+        data = data.substring(30, data.length)
+        wikip(data, (err, final) => {
+            if(err) throw err;
+            else {
+                const ans = JSON.parse(final);
+                ans["person"] = req.query.person
+                response.render("details", {
+                    data : ans
+                })
+            }
+        })
+        // response.send("SUCCESS")
+    })
+})
 //Starting the server
 app.listen(6004, console.log("Listening at port 6004..."));
