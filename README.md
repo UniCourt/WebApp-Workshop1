@@ -73,13 +73,13 @@ One Day workshop on understanding Docker to package applications into containers
          Docker Compose is now successfully installed on your system.
   4. Download the follwing docker images to your local machine  
      -   ```
-         docker pull node:18.15.0-alpine3.17
+         docker pull oven/bun:1.0.35-alpine
          ```
          - Verify the image is pulled into your local machine
            ``` 
-            docker run --rm -ti node:18.15.0-alpine3.17 node -v
+            docker run --rm -ti oven/bun:1.0.35-alpine bun -v
             ```
-            Output: **v18.15.0**
+            Output: **1.0.35**
      -   ```
          docker pull postgres:14-alpine
          ```
