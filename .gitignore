@@ -1,2 +1,5 @@
 NodeJs/code/nodejs-app/.env
-NodeJs/code/simple-nodejs-app/node_modules
+node_modules/
+
+# Lock files
+package-lock.json

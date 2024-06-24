@@ -7,7 +7,7 @@
     "start": "bun --hot run index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private":"true",
+  "private": "true",
   "dependencies": {
     "axios": "^0.19.2",
     "dotenv": "^16.0.3",
@@ -15,6 +15,7 @@
     "express": "^4.17.1",
     "node-fetch": "^2.6.7",
     "request": "^2.88.2",
-    "wiki-infobox-parser": "^0.1.11"
+    "wiki-infobox-parser": "^0.1.11",
+    "wikipedia": "^2.0.0"
   }
 }

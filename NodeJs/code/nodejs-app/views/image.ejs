@@ -17,25 +17,17 @@
       <div class="container mt-50">
         <div class="row align-items-start">
           <div class="table-head mb-5">
-            <h5><%= data.title %> Details</h5>
+            <h5><%= data.title %> Image</h5>
           </div>
           <div class="col-4 pl-0">
-            <div>
-              <picture>
-                <img
-                  src="<%= data.thumbnail.source %>"
-                  class="img-fluid img-thumbnail"
-                  width="400px"
-                  height="500px"
-                />
-              </picture>
-            </div>
-          </div>
-          <div class="col-8 pr-0">
-            <div class="cust-card">
-              <p><b> <%= data.title %></b></p>
-              <p>Explanation: <%= data.extract %></p>
-            </div>
+            <picture>
+              <img
+                src="<%= data.image %>"
+                class="img-fluid img-thumbnail"
+                width="400px"
+                height="500px"
+              />
+            </picture>
           </div>
           <a type="submit" class="btn btn-secondary add" href="/">Back</a>
         </div>
